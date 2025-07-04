@@ -3,12 +3,7 @@
   "packageManager": "yarn@4.9.1",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
-  "engines": {
-    "node": ">=18.0.0",
-    "yarn": ">=4.9.1"
-  },
-  "jest": {
+  "type": "module",  "jest": {
     "testEnvironment": "jsdom",
     "moduleNameMapper": {
       "\\.(css|less|scss|sass)$": "identity-obj-proxy",
