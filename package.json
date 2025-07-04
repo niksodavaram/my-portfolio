@@ -43,7 +43,9 @@
     "clean:install": "yarn clean && yarn install",
     "test": "node --experimental-vm-modules --trace-warnings node_modules/jest/bin/jest.js",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "vercel-pull": "yarn dlx vercel pull",
+    "vercel-build": "yarn dlx vercel build"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.4",
