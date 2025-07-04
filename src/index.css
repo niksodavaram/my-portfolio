@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+.dash-line {
+    background: linear-gradient(90deg, transparent, transparent 50%, #EAB308 50%, #EAB308);
+    background-size: 20px 100%;
+    animation: moveRoad 1s linear infinite;
+}
+
+@keyframes moveRoad {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 20px 0;
+    }
+}
+@keyframes dash {
+    to {
+        stroke-dashoffset: -20;
+    }
+}
+
+.dash-line {
+    animation: dash 1s linear infinite;
+}
