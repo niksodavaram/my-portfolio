@@ -23,7 +23,7 @@ const Contact = () => {
         className="max-w-6xl mx-auto pt-12"
       >
         <div className="text-center mb-16">
-          <motion.h1 
+          <motion.h1
             className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 dark:text-white"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -31,7 +31,7 @@ const Contact = () => {
           >
             Get in Touch
           </motion.h1>
-          <motion.p 
+          <motion.p
             className="text-slate-600 dark:text-slate-400 text-lg"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -50,7 +50,7 @@ const Contact = () => {
           >
             <div className="bg-white dark:bg-slate-800 p-6 md:p-8 rounded-2xl shadow-lg">
               <h2 className="text-2xl font-semibold mb-6 text-slate-900 dark:text-white">Contact Information</h2>
-              
+
               <div className="space-y-6">
                 <motion.a
                   href="tel:+61452342206"
@@ -124,7 +124,7 @@ const Contact = () => {
                              text-slate-900 dark:text-white placeholder-slate-400
                              transition-all duration-200"
                     value={formData.name}
-                    onChange={(e) => setFormData({...formData, name: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   />
                 </div>
 
@@ -140,7 +140,7 @@ const Contact = () => {
                              text-slate-900 dark:text-white placeholder-slate-400
                              transition-all duration-200"
                     value={formData.email}
-                    onChange={(e) => setFormData({...formData, email: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   />
                 </div>
 
@@ -156,7 +156,7 @@ const Contact = () => {
                              text-slate-900 dark:text-white placeholder-slate-400
                              transition-all duration-200"
                     value={formData.subject}
-                    onChange={(e) => setFormData({...formData, subject: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                   />
                 </div>
 
@@ -172,7 +172,7 @@ const Contact = () => {
                              text-slate-900 dark:text-white placeholder-slate-400
                              transition-all duration-200 resize-none"
                     value={formData.message}
-                    onChange={(e) => setFormData({...formData, message: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   />
                 </div>
 
